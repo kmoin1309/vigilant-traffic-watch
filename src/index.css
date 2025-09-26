@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* AI Traffic Monitoring System Design System
+Professional security interface with sophisticated data visualization
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - Dark professional theme */
+    --background: 220 27% 5%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 23% 7%;
+    --card-foreground: 210 20% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 23% 7%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep tech blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 27% 5%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Sophisticated slate */
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 210 20% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 15% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 20% 16%;
+    --accent-foreground: 210 20% 92%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Alert colors for violations */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 220 27% 5%;
+    --success: 142 76% 45%;
+    --success-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Traffic system specific colors */
+    --violation-critical: 0 84% 60%;
+    --violation-warning: 43 96% 56%;
+    --violation-info: 217 91% 60%;
+    --system-active: 142 76% 45%;
+    --camera-offline: 215 15% 40%;
+
+    /* Gradients for modern interface */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(15 84% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 45%), hsl(142 76% 55%));
+    --gradient-background: linear-gradient(180deg, hsl(220 27% 5%), hsl(220 30% 4%));
+
+    /* Shadows and effects */
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 4px 20px hsl(220 50% 2% / 0.8);
+    --shadow-violation: 0 0 30px hsl(0 84% 60% / 0.4);
+
+    /* Animation transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
